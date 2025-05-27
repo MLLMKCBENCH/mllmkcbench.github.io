@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMKC-Bench: Benchmarking Multimodal Knowledge Conflict</title>
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .red-brown { color: #8B0000; }
+    .hero { background-color: #f8f9fa; padding: 3rem 1.5rem; }
+    .publication-title { margin-bottom: 0.5rem; }
+    .triangle-bigai::before { content: "▲"; color: #8B0000; font-size: 0.6em; margin-right: 3px; }
+    .triangle-ustc::before { content: "▲"; color: #0066cc; font-size: 0.6em; margin-right: 3px; }
+    .triangle-pku::before { content: "▲"; color: #990000; font-size: 0.6em; margin-right: 3px; }
+    .triangle-bit::before { content: "▲"; color: #008000; font-size: 0.6em; margin-right: 3px; }
+    .link-block { display: inline-block; margin: 0 5px; }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title is-bold">
+              <img src="https://via.placeholder.com/32/8B0000/FFFFFF?text=MMKC"  style="width:2em; vertical-align: middle" alt="Logo"/>
+              <span class="MMKE-Bench" style="vertical-align: middle; color: #8B0000;">MMKC-Bench</span>
+            </h1>
+            <h2 class="subtitle is-3 publication-subtitle" style="color: black;">
+              Benchmarking Multimodal Knowledge Conflict for Large Multimodal Models
+            </h2>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://yuntaodu.github.io/"  class="red-brown">Yifan Jia*</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://kailinjiang.github.io/"  class="red-brown">Kailin Jiang*</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Yuyang Liang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://nebularaid2000.github.io/"  class="red-brown">Qihan Ren</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Yi Xin</a><sup>4</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Rui Yang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Fenze Feng</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Mingcai Chen</a><sup>5</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Hengyang Lu</a><sup>6</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Haozhe Wang</a><sup>7</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Xiaoye Qu</a><sup>8</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Dongrui Liu</a><sup>8</sup>,
+              </span>
+              <span class="author-block">
+                <a href="#" class="red-brown">Lizhen Cui</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://yuntaodu.github.io/"  class="red-brown">Yuntao Du</a><sup>1&#x1f4e7;</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block triangle-bigai"><sup>1</sup>Shandong University</span>
+              <span class="author-block triangle-ustc"><sup>2</sup>University of Science and Technology of China</span>
+              <span class="author-block triangle-pku"><sup>3</sup>Shanghai Jiaotong University</span>
+              <span class="author-block triangle-bit"><sup>4</sup>Nanjing University</span>
+              <span class="author-block triangle-bit"><sup>5</sup>Nanjing University of Posts and Telecommunications</span>
+              <span class="author-block triangle-bit"><sup>6</sup>Jiangnan University</span>
+              <span class="author-block triangle-bit"><sup>7</sup>The Hong Kong University of Science and Technology</span>
+              <span class="author-block triangle-bit"><sup>8</sup>Shanghai AI Laboratory</span>
+            </div>
+
+            <br>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">*Core Contributors</span><br>
+              <span class="author-block">†Corresponding to:</span>
+              <span class="author-block">
+                <a href="mailto:yuntaodu@sdu.edu.cn">yuntaodu@sdu.edu.cn</a>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2502.19870"  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/kailinjiang/MMKE-Bench-dataset"  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" style="font-size:18px">🤗</span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/MMKE-Bench-ICLR/MMKE-Bench"  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://example.com/static/Slides/MMKE-Bench.pdf"  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Slides</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="has-text-centered" style="margin-top: 1rem; color: #666;">
+              <small>Last updated: May 27, 2025 (乙巳年五月初一)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
